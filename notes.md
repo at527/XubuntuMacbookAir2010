@@ -19,10 +19,11 @@ While the Nouveau drivers work, they run very hot.
 This askUbuntu answer describes the procedure to enable Nvidia drivers on
 Macbooks. The next section is a summary of the page.
 
-https://askubuntu.com/a/613573
+<https://askubuntu.com/a/613573>
 
 The page is titled "Proprietary NVidia drivers with EFI on Mac, to prevent
-overheating" : https://askubuntu.com/questions/264247/proprietary-nvidia-drivers-with-efi-on-mac-to-prevent-overheating
+overheating" :
+<https://askubuntu.com/questions/264247/proprietary-nvidia-drivers-with-efi-on-mac-to-prevent-overheating>
 
 ## Preparing for Installing Nvidia Drivers (from askUbuntu above)
 
@@ -61,7 +62,7 @@ overheating" : https://askubuntu.com/questions/264247/proprietary-nvidia-drivers
     ```
 
     Then paste the following into the file. Be sure to use your PCI-E bus
-    info found in step 2. 
+    info found in step 2.
 
     ```bash
     cat << EOF
@@ -75,7 +76,7 @@ overheating" : https://askubuntu.com/questions/264247/proprietary-nvidia-drivers
     ```bash
     sudo chmod 755 /etc/grub.d/01_enable_vga.conf
     ```
-    
+
     ```bash
     sudo setpci -s "04:00.0" 04.b
     ```
@@ -100,12 +101,12 @@ after the next step.
 
 ## Enabling Brightness Control when using Nvidia Drivers
 
-The following comes from 
-https://askubuntu.com/questions/76081/brightness-not-working-after-installing-nvidia-driver
+The following comes from
+<https://askubuntu.com/questions/76081/brightness-not-working-after-installing-nvidia-driver>
 titled "Brightness not working after installing NVIDIA driver"
 
 1. Create and edit the xorg configuration
-    
+
     ```bash
     sudo nano /usr/share/X11/xorg.conf.d/10-nvidia-brightness.conf
     ```
