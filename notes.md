@@ -76,15 +76,28 @@ overheating" :
     ```bash
     sudo chmod 755 /etc/grub.d/01_enable_vga.conf
     ```
+    
+    ```bash
+    sudo update-grub
+    ```
+
 
     ```bash
-    sudo setpci -s "04:00.0" 04.b
+    sudo setpci -s "02:00.0" 04.b
     ```
 
 5. Reboot your machine
 
-6. There are instructions to check if the changes were made in the askUbuntu.
-
+6. Verify the changes were made.
+    
+    ```bash
+    sudo setpci -s "02:00.0" 04.b
+    ```
+    
+    ```bash
+    sudo setpci -s "00:17.0" 3e.b
+    ```
+    
 7. Continue to install nVidia drivers.
 
 ## Install Nvidia Drivers
