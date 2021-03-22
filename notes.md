@@ -76,14 +76,13 @@ overheating" :
     ```bash
     sudo chmod 755 /etc/grub.d/01_enable_vga.conf
     ```
-    
+    (For Ubuntu Debian Based)
     ```bash
     sudo update-grub
     ```
-
-
+    (For Fedora/RHEL Based)
     ```bash
-    sudo setpci -s "02:00.0" 04.b
+    sudo grub2-mkconfig -o /boot/efi/EFI/fedora/grub.cfg
     ```
 
 5. Reboot your machine
